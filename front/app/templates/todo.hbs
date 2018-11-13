@@ -1,0 +1,13 @@
+<ul class="list-group list-group-flush">
+  {{#each model as |listElement|}}
+    <li {{action "toggleElementStatus" listElement.id listElement.done}} class="list-group-item my-list-item" role="button">
+      {{#if listElement.done}}
+        {{fa-icon "check-circle" class="done-icon"}}
+        <span class="done-span">{{listElement.label}}</span>
+      {{else}}
+        {{fa-icon "circle-o" class="undone-icon"}}
+        <span>{{listElement.label}}</span>
+      {{/if}}
+    </li>
+  {{/each}}
+</ul>

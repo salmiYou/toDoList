@@ -1,0 +1,23 @@
+<div {{action "toggleModal"}} role="button">
+  {{fa-icon "plus" size="lg" class="nav-element" action="toggleModal"}}
+</div>
+
+{{#if isShowingModal}}
+  {{#modal-dialog
+  onClose=(action (mut isShowingModal) false)
+  hasOverlay=false
+  clickOutsideToClose=true
+  tetherTarget="#my-nav-bar-id"
+  targetAttachment="top right"
+  attachment="top right"
+  targetOffset="0 0"
+  containerClassNames="col-md-4 col-lg-4 col-sm-12 act-modal"
+  }}
+
+    <div class="row">
+      {{input class="col-9 act-add-input" id="new-act-input" type="text" value=newActionValue placeholder="add new action"}}
+      <span class="col-3 act-save-btn {{if newActionValue.length "enable-act-save-btn"}}" {{action "saveNewAction"}} role="button">Add</span>
+    </div>
+
+  {{/modal-dialog}}
+{{/if}}

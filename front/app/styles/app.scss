@@ -1,0 +1,70 @@
+
+@import "ember-bootstrap/bootstrap";
+@import "font-awesome";
+header {
+  grid-area: header;
+  background-color: #29275F;
+}
+.nav-element {
+  color: #00C8FF!important;
+}
+.my-toggler-icon {
+  border-color: transparent!important;
+}
+.add-icon {
+  font-size: 30px;
+  font-weight: bold;
+  color: #00C8FF;
+}
+
+body {
+  background-color: #42417d;
+}
+.my-list-item {
+  background-color: transparent;
+  color: #FFFFFF;
+}
+.done-icon {
+  margin-right: 0.5em;
+  color: #8bce7a;
+}
+.done-span {
+  text-decoration: line-through;
+  color: #9796B5;
+}
+.undone-icon {
+  margin-right: 0.5em;
+  color: #9796B5;
+}
+.act-modal {
+  background-color: #29275F;
+}
+.act-add-input {
+  border: transparent;
+  background: transparent;
+  color: white;
+}
+.act-add-input:focus {
+  outline:none;
+}
+.act-save-btn {
+  color: #9796B5;
+  opacity: 0.5;
+  font-size: 1.3rem;
+  font-weight: bold
+}
+.enable-act-save-btn {
+  opacity: 1;
+  color: white;
+}
+.ember-modal-dialog {
+  border-radius: 8px;
+  background-color: #29275F;
+  box-shadow: 0 0 10px #222;
+  padding: 10px;
+}
+.ember-modal-overlay.translucent {
+  background-color: rgba(#808080, .77);
+}
+@import "ember-modal-dialog/ember-modal-structure";
+//@import "ember-modal-dialog/ember-modal-appearance";
