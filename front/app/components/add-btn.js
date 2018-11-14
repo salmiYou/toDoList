@@ -9,6 +9,7 @@ export default Component.extend({
       this.toggleProperty('isShowingModal');
       if (this.isShowingModal)
           this.$('#new-act-input').focus();
+      this.set('newActionValue', '');
     },
     saveNewAction() {
       const actionVal = this.get('newActionValue');
