@@ -1,1 +1,0 @@
-{"version":3,"sources":["todo.js"],"names":[],"mappings":"AAAA,OAAO,KAAP,MAAkB,sBAAlB;;AAEA,eAAe,MAAM,MAAN,CAAa;AAC1B,UAAQ;AACN,WAAO,KAAK,KAAL,CAAW,OAAX,CAAmB,MAAnB,CAAP;AACD;AAHyB,CAAb,CAAf","file":"todo-compiled.js","sourcesContent":["import Route from '@ember/routing/route';\n\nexport default Route.extend({\n  model() {\n    return this.store.findAll('todo');\n  }\n});\n"]}

@@ -1,1 +1,0 @@
-{"version":3,"sources":["todo.js"],"names":[],"mappings":"AAAA,OAAO,EAAP,MAAe,YAAf;;AAEA,eAAe,GAAG,KAAH,CAAS,MAAT,CAAgB;AAC7B,SAAO,GAAG,IAAH,EADsB;AAE7B,QAAM,GAAG,IAAH;;AAFuB,CAAhB,CAAf","file":"todo-compiled.js","sourcesContent":["import DS from 'ember-data';\n\nexport default DS.Model.extend({\n  label: DS.attr(),\n  done: DS.attr()\n\n});\n"]}
