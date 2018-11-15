@@ -1,0 +1,10 @@
+version: '2.0'
+services:
+  web:
+   build: ./front
+   ports: 
+     - "80:80"
+  app:
+   build: ./back
+   ports:
+     - "3000:3000"
